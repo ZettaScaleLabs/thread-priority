@@ -47,8 +47,7 @@ fn get_and_set_priority_with_normal_policies(
     target_os = "macos",
     target_os = "openbsd",
     target_os = "freebsd",
-    target_os = "netbsd",
-    target_os = "nto"
+    target_os = "netbsd"
 ))]
 #[rstest]
 fn get_and_set_priority_with_normal_policies(
@@ -109,8 +108,7 @@ fn set_priority_with_normal_policy_but_with_invalid_value(#[case] policy: Thread
     target_os = "macos",
     target_os = "openbsd",
     target_os = "freebsd",
-    target_os = "netbsd",
-    target_os = "nto"
+    target_os = "netbsd"
 ))]
 #[test]
 // In macOS the SCHED_OTHER policy allows having a non-zero priority value,
